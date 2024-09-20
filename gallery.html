@@ -4,6 +4,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Gallery</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #f9d342;
+            transition: color 0.3s ease;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -23,9 +117,15 @@
 
     <section>
         <h2>Our Hotel Gallery</h2>
-        <p>Explore some beautiful images of our hotel.</p>
-        <img src="hotel1.jpg" alt="Hotel Image 1" width="300">
-        <img src="hotel2.jpg" alt="Hotel Image 2" width="300">
+        <p>Explore the beauty and elegance of Holiday Dream Resorts through our gallery.</p>
+        <div class="gallery">
+            <img src="hotel1.jpg" alt="Hotel Image 1">
+            <img src="hotel2.jpg" alt="Hotel Image 2">
+            <img src="hotel3.jpg" alt="Hotel Image 3">
+            <img src="hotel4.jpg" alt="Hotel Image 4">
+            <img src="hotel5.jpg" alt="Hotel Image 5">
+            <img src="hotel6.jpg" alt="Hotel Image 6">
+        </div>
     </section>
 
     <footer>
